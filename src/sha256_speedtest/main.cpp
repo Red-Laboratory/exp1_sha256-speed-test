@@ -20,7 +20,7 @@ int main() {
         auto duration = std::chrono::system_clock::now() - start;
 
         if (y >= 500) {
-            data.push_back(duration.count() * 0.0001);
+            data.push_back(duration.count() / 1000000.0);
         }
     }
 
